@@ -1,12 +1,12 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-const Subscriptions = () => {
+const Radar = () => {
   return (
     <View>
-      <Text>Subscriptions Screen Placeholder</Text>
+      <Text>Radar Screen Placeholder</Text>
     </View>
   );
 };
 
-export default Subscriptions;
+export default Radar;

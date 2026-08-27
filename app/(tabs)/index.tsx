@@ -33,6 +33,15 @@ export default function App() {
       >
         Sign In
       </Link>
+      <Link href="/radar/netflix">Netflix Subscription</Link>
+      <Link
+        href={{
+          pathname: "/radar/[id]",
+          params: { id: "barkbox" },
+        }}
+      >
+        BarkBox Subscription
+      </Link>
     </View>
   );
 }
