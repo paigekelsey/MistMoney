@@ -1,6 +1,17 @@
 import "@/global.css";
-import { Stack } from "expo-router";
+import { Tabs } from "expo-router";
 
-export default function RootLayout() {
-  return <Stack screenOptions={{ headerShown: false }} />;
-}
+const TabLayout = () => {
+  return (
+    <>
+      <Tabs screenOptions={{ headerShown: false }}>
+        <Tabs.Screen name="index" options={{ title: "Home" }} />
+        <Tabs.Screen name="radar" options={{ title: "Radar" }} />
+        <Tabs.Screen name="forecast" options={{ title: "Forecast" }} />
+        <Tabs.Screen name="settings" options={{ title: "Settings" }} />
+      </Tabs>
+    </>
+  );
+};
+
+export default TabLayout;
