@@ -3,6 +3,5 @@
     "source.organizeImports": "explicit",
     "source.sortMembers": "explicit"
   },
-  "css.lint.unknownAtRules": "ignore",
-  "prettier.singleAttributePerLine": true
+  "css.lint.unknownAtRules": "ignore"
 }

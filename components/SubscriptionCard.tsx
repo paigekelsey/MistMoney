@@ -31,22 +31,12 @@ const SubscriptionCard = ({
     >
       <View className="sub-head">
         <View className="sub-main">
-          <Image
-            source={icon}
-            className="sub-icon"
-          />
+          <Image source={icon} className="sub-icon" />
           <View className="sub-copy">
-            <Text
-              numberOfLines={1}
-              className="sub-title"
-            >
+            <Text numberOfLines={1} className="sub-title">
               {name}
             </Text>
-            <Text
-              numberOfLines={1}
-              ellipsizeMode="tail"
-              className="sub-meta"
-            >
+            <Text numberOfLines={1} ellipsizeMode="tail" className="sub-meta">
               {category?.trim() ||
                 plan?.trim() ||
                 (renewalDate ? formatSubscriptionDateTime(renewalDate) : "")}
@@ -71,7 +61,7 @@ const SubscriptionCard = ({
                   numberOfLines={1}
                   ellipsizeMode="tail"
                 >
-                  {paymentMethod?.trim()}
+                  {paymentMethod?.trim() ?? "Not provided"}
                 </Text>
               </View>
             </View>
