@@ -32,7 +32,7 @@ export default function App() {
         className="mt-4 rounded bg-primary text-white p-4"
       >
         Sign In
-      </Link>{" "}
+      </Link>
     </View>
   );
 }
